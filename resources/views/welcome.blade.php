@@ -17,9 +17,11 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
+                
             }
         </style>
     </head>
+    <center>
     <body class="antialiased">
          <h1>Algum título</h1>
 @if (10>5)
@@ -29,6 +31,17 @@
 {{ $nome}}
         </h1>
 
+
+
+@for($i2 = 0; $i2 < count($nomes); $i2++)
+
+
+@if ($nomes[$i2] != 'Bruno')
+<p>Seu nome é {{$nomes[$i2]}} e não é {{$nome}}</p>
+@endif
+@endfor
+
+
 @if ($nome == "Bruno")
 <p>O nome é legal</p>
 @else 
@@ -36,5 +49,17 @@
 @endif
 
 <p>idade: {{$idade}}</p>
+
+@for($i = 0; $i < count($arr); $i++)
+ 
+<p>Número Indicie array{{$i}}
+Número valor array{{$arr[$i]}}</p>
+@endfor
+
+
+
+@foreach($nomes as $nome)
+<p>{{$nome}}</p>
+@endforeach
     </body>
 </html>
