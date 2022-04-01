@@ -1,6 +1,11 @@
 body{
-    background-color: blue;
+    background-color:lightblue;
 }
 h1{
     color: red;
+}
+
+*{
+    font-family: 'PT Sans', sans-serif;
+
 }
