@@ -1,10 +1,10 @@
 @extends('layouts.main')
 
-@section('title', 'Produtos Brabos')
+@section('title', 'Produto')
 
 @section('content')
 
-<h1> Esta é a página de Produtos</h1>
-<a href="/">Voltar home</a>
+<p>Exibindo produto id:{{$id}}
+
 
 @endsection

@@ -1,11 +1,11 @@
 body{
-    background-color:lightblue;
-}
-h1{
-    color: red;
+    background-color:cornsilk;
 }
 
 *{
     font-family: 'PT Sans', sans-serif;
 
+}
+#navbar img {
+ width: 75px;
 }
