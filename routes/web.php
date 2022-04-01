@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,21 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $nome = "Bruno";
-    $idade = 19;
-    $arr = [1,2,3,4,5,6,7,8,9,10];
-   
-    $nomes = ['Rodrigo', 'João', 'Erick'];
-    return view('welcome', 
-    [
-        'nome' => $nome, 
-        'idade'=> $idade, 
-        'arr'=> $arr,
-        'nomes'=> $nomes
-    ]);
 
-});
+Route::get('/', [EventoController::class, 'index']); 
+   
+Route::get('/evento/criar', [EventoController::class, 'create']); 
+
 
 Route::get('/contact', function () {
     return view('contact');

@@ -6,6 +6,12 @@
         <h1>Algum título</h1>
         <img src="/img/E3.jpg">
         
+
+
+
+
+
+
 @if (10>5)
 <p>True</p>
 @endif
